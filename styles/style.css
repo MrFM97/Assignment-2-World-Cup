@@ -28,6 +28,7 @@ body{
     color: #ffffff;
     padding: 0 106px;
     margin-top: 50px;
+    overflow: none;
 }
 
 .banner-heading{
@@ -149,6 +150,9 @@ main{
     margin-right: 20px;
 }
 
+.view{
+    display: none;
+}
 /* ----------------------- Main section ended here --------------------- */
 
 /* --------- Footer Started ---------- */
@@ -201,12 +205,93 @@ hr{
 
 /* Tablet view starts */
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        
+        .banner-section{
+            overflow: hidden;
+            padding: 21px 61px;
+            column-gap: 20px;
+        }
+        .banner-heading{
+            font-size: 2.5em;
+        }
+        .banner-paragraph{
+            font-size: 1em;
+        }
+        .player-image img{
+            width: 323px;
+            height: 340px;
+            position: relative;
+            top: 40px;
+            right: 20px;
+        }
+        main{
+            margin-top: 0;
+        }
+        .blog-section{
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar{
+            background-color: #ffffff;
+            height: 65px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        .nav{
+            flex-direction: row;
+        }
+        .blogs {
+            grid-template-columns: repeat(2,1fr);
+        }
+        .view{
+            display: block;
+            margin-top: 30px;
+        }
+
     }
 /* Tablet view ends */
 
 /* Mobile view starts */
 @media only screen and (min-width: 360px) and (max-width: 767px) {
-        
+    .wrapper{
+        width: 95%;
+    }
+        .banner-section{
+            flex-direction: column;
+            padding: 50px;
+        }
+
+        .banner-texts{
+            width: 100%;
+            text-align: center;
+        }
+
+        .Watch-live{
+            margin: 0 auto;
+        }
+
+        .banner-heading{
+            font-size: 2em;
+        }
+        .player-image img{
+            margin-top: 20px;
+            width: 233px;
+            height: 245px;
+        }
+        .blog-section{
+            flex-direction: column;
+        }
+        .navbar{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        .blogs{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .footer-options{
+            flex-direction: column;
+            align-items: center;
+        }
 }
 /* Mobile view ends */
