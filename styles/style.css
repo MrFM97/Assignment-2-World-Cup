@@ -4,6 +4,7 @@
 
 /* google fonts */
 
+/* Common styles and utilities */
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -14,6 +15,9 @@ body{
     margin: 0 auto;
 }
 
+/* Common styles and utilities */
+
+/* Header section starts */
 .banner-section{
     display: flex;
     justify-content: center;
@@ -55,3 +59,71 @@ body{
     width: 581px;
     height: 613px;
 }
+/* Header section completed */
+
+/* ----------------------- Main section started here --------------------- */
+main{
+    margin-top: 130px;
+}
+.navbar {
+    background-color: #161616;
+    width: 312px;
+    height: 312px;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.navbar a{
+    display: inline-block;
+    background-color: rgb(247, 247, 247);
+     text-decoration: none;
+    width: 252px;
+    height: 64px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+}
+.navbar a.active {
+    background-color: #DD0000;
+    color: #fff;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #161616;
+}
+
+.blogs {
+}
+
+.blog-image {
+}
+
+.blog-desc {
+}
+
+.blog-button {
+}
+
+.blog-history {
+}
+
+.duration {
+}
+
+.far.fa-clock {
+}
+
+.chats {
+}
+
+.far.fa-comment {
+}
+/* ----------------------- Main section ended here --------------------- */
